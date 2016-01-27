@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		27159BE71BF4146B0078956F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27159BE61BF4146B0078956F /* AppDelegate.swift */; };
-		27159BE91BF4146B0078956F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27159BE81BF4146B0078956F /* ViewController.swift */; };
+		27159BE91BF4146B0078956F /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27159BE81BF4146B0078956F /* CalculateViewController.swift */; };
 		27159BEC1BF4146B0078956F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27159BEA1BF4146B0078956F /* Main.storyboard */; };
 		27159BEE1BF4146B0078956F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27159BED1BF4146B0078956F /* Assets.xcassets */; };
 		27159BF11BF4146B0078956F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27159BEF1BF4146B0078956F /* LaunchScreen.storyboard */; };
+		27159BF91BF415540078956F /* LabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27159BF81BF415540078956F /* LabelCollectionViewCell.swift */; };
+		27159BFB1BF41CB30078956F /* LabelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27159BFA1BF41CB30078956F /* LabelCollectionViewCell.xib */; };
+		27D30E0F1C24B94700FBB8DE /* SimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D30E0E1C24B94700FBB8DE /* SimpleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		27159BE31BF4146B0078956F /* CollectionViewCellHeight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewCellHeight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27159BE61BF4146B0078956F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		27159BE81BF4146B0078956F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		27159BE81BF4146B0078956F /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalculateViewController.swift; path = CollectionViewCellHeight/CalculateViewController.swift; sourceTree = "<group>"; };
 		27159BEB1BF4146B0078956F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		27159BED1BF4146B0078956F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27159BED1BF4146B0078956F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CollectionViewCellHeight/Assets.xcassets; sourceTree = "<group>"; };
 		27159BF01BF4146B0078956F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27159BF21BF4146B0078956F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27159BF81BF415540078956F /* LabelCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LabelCollectionViewCell.swift; path = CollectionViewCellHeight/LabelCollectionViewCell.swift; sourceTree = "<group>"; };
+		27159BFA1BF41CB30078956F /* LabelCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LabelCollectionViewCell.xib; path = CollectionViewCellHeight/LabelCollectionViewCell.xib; sourceTree = "<group>"; };
+		27D30E0E1C24B94700FBB8DE /* SimpleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimpleViewController.swift; path = CollectionViewCellHeight/SimpleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +44,9 @@
 		27159BDA1BF4146B0078956F = {
 			isa = PBXGroup;
 			children = (
-				27159BE51BF4146B0078956F /* CollectionViewCellHeight */,
+				27159BE51BF4146B0078956F /* Initialization */,
+				27C6603A1C57FFF000B63439 /* Views */,
+				27C6603B1C58000D00B63439 /* ViewControllers */,
 				27159BE41BF4146B0078956F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,17 +59,35 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		27159BE51BF4146B0078956F /* CollectionViewCellHeight */ = {
+		27159BE51BF4146B0078956F /* Initialization */ = {
 			isa = PBXGroup;
 			children = (
 				27159BE61BF4146B0078956F /* AppDelegate.swift */,
-				27159BE81BF4146B0078956F /* ViewController.swift */,
-				27159BEA1BF4146B0078956F /* Main.storyboard */,
-				27159BED1BF4146B0078956F /* Assets.xcassets */,
-				27159BEF1BF4146B0078956F /* LaunchScreen.storyboard */,
 				27159BF21BF4146B0078956F /* Info.plist */,
 			);
+			name = Initialization;
 			path = CollectionViewCellHeight;
+			sourceTree = "<group>";
+		};
+		27C6603A1C57FFF000B63439 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				27159BED1BF4146B0078956F /* Assets.xcassets */,
+				27159BEA1BF4146B0078956F /* Main.storyboard */,
+				27159BEF1BF4146B0078956F /* LaunchScreen.storyboard */,
+				27159BFA1BF41CB30078956F /* LabelCollectionViewCell.xib */,
+				27159BF81BF415540078956F /* LabelCollectionViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		27C6603B1C58000D00B63439 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				27D30E0E1C24B94700FBB8DE /* SimpleViewController.swift */,
+				27159BE81BF4146B0078956F /* CalculateViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +151,7 @@
 				27159BF11BF4146B0078956F /* LaunchScreen.storyboard in Resources */,
 				27159BEE1BF4146B0078956F /* Assets.xcassets in Resources */,
 				27159BEC1BF4146B0078956F /* Main.storyboard in Resources */,
+				27159BFB1BF41CB30078956F /* LabelCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +162,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27159BE91BF4146B0078956F /* ViewController.swift in Sources */,
+				27159BF91BF415540078956F /* LabelCollectionViewCell.swift in Sources */,
+				27D30E0F1C24B94700FBB8DE /* SimpleViewController.swift in Sources */,
+				27159BE91BF4146B0078956F /* CalculateViewController.swift in Sources */,
 				27159BE71BF4146B0078956F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,6 +178,7 @@
 				27159BEB1BF4146B0078956F /* Base */,
 			);
 			name = Main.storyboard;
+			path = CollectionViewCellHeight;
 			sourceTree = "<group>";
 		};
 		27159BEF1BF4146B0078956F /* LaunchScreen.storyboard */ = {
@@ -157,6 +187,7 @@
 				27159BF01BF4146B0078956F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = CollectionViewCellHeight;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -250,6 +281,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CollectionViewCellHeight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.possiblemobile.CollectionViewCellHeight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -261,6 +293,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CollectionViewCellHeight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.possiblemobile.CollectionViewCellHeight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -286,6 +319,7 @@
 				27159BF71BF4146B0078956F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

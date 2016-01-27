@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  CollectionViewCellHeight
-//
-//  Created by Jeremiah Gage on 11/11/15.
-//  Copyright © 2015 Jeremiah Gage. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
