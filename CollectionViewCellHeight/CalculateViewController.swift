@@ -14,19 +14,24 @@ class CalculateViewController: UIViewController, UICollectionViewDataSource, UIC
         collectionView.registerNib(UINib(nibName: "LabelCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "LabelCell")
 
         if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-            flowLayout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10) //could not set in storyboard for some reason
+            flowLayout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10) //could not set in storyboard, don't know why
         }
     }
     
     override func viewDidLayoutSubviews()
     {
         if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-            let totalCellAvailableWidth = collectionView.frame.size.width - flowLayout.sectionInset.left - flowLayout.sectionInset.right - flowLayout.minimumInteritemSpacing * (columnNum - 1)
+            let spaceBetweenCells = flowLayout.minimumInteritemSpacing * (columnNum - 1)
+            let totalCellAvailableWidth = collectionView.frame.size.width - flowLayout.sectionInset.left - flowLayout.sectionInset.right - spaceBetweenCells
             cellWidth = floor(totalCellAvailableWidth / columnNum);
         }
     }
 
-    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+    override func viewWillLayoutSubviews()
+    {
+        super.viewWillLayoutSubviews()
+        
+        //recalculate the collection view layout when the view layout changes
         collectionView.collectionViewLayout.invalidateLayout()
     }
 
@@ -49,10 +54,11 @@ class CalculateViewController: UIViewController, UICollectionViewDataSource, UIC
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize
     {
         if let cell = LabelCollectionViewCell.fromNib() {
+            let cellMargins = cell.layoutMargins.left + cell.layoutMargins.right
             cell.configureWithIndexPath(indexPath)
-            cell.label.preferredMaxLayoutWidth = cellWidth - 16
-            cell.labelWidthLayoutConstraint.constant = cellWidth - 16 //adjust the width to be correct for the number of columns
-            return cell.contentView.systemLayoutSizeFittingSize(UILayoutFittingCompressedSize)
+            cell.label.preferredMaxLayoutWidth = cellWidth - cellMargins
+            cell.labelWidthLayoutConstraint.constant = cellWidth - cellMargins //adjust the width to be correct for the number of columns
+            return cell.contentView.systemLayoutSizeFittingSize(UILayoutFittingCompressedSize) //apply auto layout and retrieve the size of the cell
         }
         return CGSizeZero
     }

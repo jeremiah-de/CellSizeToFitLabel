@@ -10,7 +10,6 @@
 		27159BE71BF4146B0078956F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27159BE61BF4146B0078956F /* AppDelegate.swift */; };
 		27159BE91BF4146B0078956F /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27159BE81BF4146B0078956F /* CalculateViewController.swift */; };
 		27159BEC1BF4146B0078956F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27159BEA1BF4146B0078956F /* Main.storyboard */; };
-		27159BEE1BF4146B0078956F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27159BED1BF4146B0078956F /* Assets.xcassets */; };
 		27159BF11BF4146B0078956F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27159BEF1BF4146B0078956F /* LaunchScreen.storyboard */; };
 		27159BF91BF415540078956F /* LabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27159BF81BF415540078956F /* LabelCollectionViewCell.swift */; };
 		27159BFB1BF41CB30078956F /* LabelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27159BFA1BF41CB30078956F /* LabelCollectionViewCell.xib */; };
@@ -18,11 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		27159BE31BF4146B0078956F /* CollectionViewCellHeight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewCellHeight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27159BE31BF4146B0078956F /* CellSizeToFitLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CellSizeToFitLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27159BE61BF4146B0078956F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27159BE81BF4146B0078956F /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalculateViewController.swift; path = CollectionViewCellHeight/CalculateViewController.swift; sourceTree = "<group>"; };
 		27159BEB1BF4146B0078956F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		27159BED1BF4146B0078956F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CollectionViewCellHeight/Assets.xcassets; sourceTree = "<group>"; };
 		27159BF01BF4146B0078956F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27159BF21BF4146B0078956F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27159BF81BF415540078956F /* LabelCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LabelCollectionViewCell.swift; path = CollectionViewCellHeight/LabelCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -54,7 +52,7 @@
 		27159BE41BF4146B0078956F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				27159BE31BF4146B0078956F /* CollectionViewCellHeight.app */,
+				27159BE31BF4146B0078956F /* CellSizeToFitLabel.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,7 +70,6 @@
 		27C6603A1C57FFF000B63439 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				27159BED1BF4146B0078956F /* Assets.xcassets */,
 				27159BEA1BF4146B0078956F /* Main.storyboard */,
 				27159BEF1BF4146B0078956F /* LaunchScreen.storyboard */,
 				27159BFA1BF41CB30078956F /* LabelCollectionViewCell.xib */,
@@ -93,9 +90,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		27159BE21BF4146B0078956F /* CollectionViewCellHeight */ = {
+		27159BE21BF4146B0078956F /* CellSizeToFitLabel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 27159BF51BF4146B0078956F /* Build configuration list for PBXNativeTarget "CollectionViewCellHeight" */;
+			buildConfigurationList = 27159BF51BF4146B0078956F /* Build configuration list for PBXNativeTarget "CellSizeToFitLabel" */;
 			buildPhases = (
 				27159BDF1BF4146B0078956F /* Sources */,
 				27159BE01BF4146B0078956F /* Frameworks */,
@@ -105,9 +102,9 @@
 			);
 			dependencies = (
 			);
-			name = CollectionViewCellHeight;
+			name = CellSizeToFitLabel;
 			productName = CollectionViewCellHeight;
-			productReference = 27159BE31BF4146B0078956F /* CollectionViewCellHeight.app */;
+			productReference = 27159BE31BF4146B0078956F /* CellSizeToFitLabel.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -125,7 +122,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 27159BDE1BF4146B0078956F /* Build configuration list for PBXProject "CollectionViewCellHeight" */;
+			buildConfigurationList = 27159BDE1BF4146B0078956F /* Build configuration list for PBXProject "CellSizeToFitLabel" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -138,7 +135,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				27159BE21BF4146B0078956F /* CollectionViewCellHeight */,
+				27159BE21BF4146B0078956F /* CellSizeToFitLabel */,
 			);
 		};
 /* End PBXProject section */
@@ -149,7 +146,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				27159BF11BF4146B0078956F /* LaunchScreen.storyboard in Resources */,
-				27159BEE1BF4146B0078956F /* Assets.xcassets in Resources */,
 				27159BEC1BF4146B0078956F /* Main.storyboard in Resources */,
 				27159BFB1BF41CB30078956F /* LabelCollectionViewCell.xib in Resources */,
 			);
@@ -284,7 +280,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.possiblemobile.CollectionViewCellHeight;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CellSizeToFitLabel;
 			};
 			name = Debug;
 		};
@@ -296,14 +292,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.possiblemobile.CollectionViewCellHeight;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CellSizeToFitLabel;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		27159BDE1BF4146B0078956F /* Build configuration list for PBXProject "CollectionViewCellHeight" */ = {
+		27159BDE1BF4146B0078956F /* Build configuration list for PBXProject "CellSizeToFitLabel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27159BF31BF4146B0078956F /* Debug */,
@@ -312,7 +308,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		27159BF51BF4146B0078956F /* Build configuration list for PBXNativeTarget "CollectionViewCellHeight" */ = {
+		27159BF51BF4146B0078956F /* Build configuration list for PBXNativeTarget "CellSizeToFitLabel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27159BF61BF4146B0078956F /* Debug */,

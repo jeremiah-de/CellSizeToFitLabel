@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CollectionViewCellHeight.xcodeproj">
+      location = "self:/Users/jeremiah/Documents/Dev/CollectionViewCellHeight/CellSizeToFitLabel.xcodeproj">
    </FileRef>
 </Workspace>
